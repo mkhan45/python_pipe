@@ -8,7 +8,7 @@ def tokenize(s):
     return [*tokens]
 
 def parse_expr(code):
-    # TODO: gotta figure out
+    # TODO: gotta figure out how to handle loops and control flow
     exprr = "[^\\n]+"
     match re.search(exprr, code):
         case None:
